@@ -11,13 +11,12 @@ HCRNet is written in Python3 and requires the following dependencies to be insta
 + [Numpy 1.19.5](http://numpy.org/)
 + [Gensim 3.8.3](http://gensim.org/)
 
-## Installation
+## **Installation**
 We recommend you to build a python virtual environment with [Anaconda](https://docs.anaconda.com/anaconda/install/linux/). 
 ```
 conda create -n hcrnet python=3.7.6
 conda activate hcrnet
 https://github.com/yangyn533/HCRNet.git
 cd HCRNet
-python3 -m pip install -r requirements.txt
 ```
-
+### **Data Availability**
