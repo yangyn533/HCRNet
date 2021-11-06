@@ -1,6 +1,8 @@
 # **HCRNet**
 This tool is developed for circRNA-binding event identification from CLIP-seq data using deep temporal convolutional network
 
+![Image text](https://github.com/yangyn533/HCRNet/blob/main/Interface.png)
+
 ## **Requirements**
 HCRNet is written in Python3 and requires the following dependencies to be installed: <br>
 + [PyTorch 1.8.1](http://pytorch.org/) <br>
