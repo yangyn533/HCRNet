@@ -20,7 +20,7 @@ https://github.com/yangyn533/HCRNet.git
 cd HCRNet
 ```
 ## **Data Availability**
-The pre-trained models (including circRNA2Vec_model, linRNA2Vec_model and bert_model), the 37 circRNA fragment datasets, 31 linear RNA datasets, a full-length circRNA dataset containing 740 sequences and the eCLIP data with binding sites of 150 novel RBPs can be downloaded in this Repositories. Meanwhile, all supporting datasets and source codes for our analyses are also freely available at (https://docs.anaconda.com/anaconda/install/linux/). 
+The pre-trained models (including circRNA2Vec_model, linRNA2Vec_model and bert_model), the 37 circRNA fragment datasets, 31 linear RNA datasets, a full-length circRNA dataset containing 740 sequences and the eCLIP data with binding sites of 150 novel RBPs can be downloaded in this Repositories. Meanwhile, all supporting datasets and source codes for our analyses are also freely available at (https://doi.org/10.6084/m9.figshare.16943722.v1). 
 
 ## **Usage**
 ```
