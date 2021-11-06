@@ -20,9 +20,7 @@ https://github.com/yangyn533/HCRNet.git
 cd HCRNet
 ```
 ## **Data Availability**
-```
 The pre-trained models (including circRNA2Vec_model, linRNA2Vec_model and bert_model), the 37 circRNA fragment datasets, 31 linear RNA datasets, a full-length circRNA dataset containing 740 sequences and the eCLIP data with binding sites of 150 novel RBPs can be downloaded in this Repositories. Meanwhile, all supporting datasets and source codes for our analyses are also freely available at (https://docs.anaconda.com/anaconda/install/linux/). 
-```
 
 ## **Usage**
 ```
@@ -56,14 +54,14 @@ The *HCRNet-Predict.py* is proposed to calculate the probability for the circRNA
 3. set the type of circRNA model. e.g., 
 
    ```python
-   modelPredictType = '/finalmodel_path /model.h5'
+   modelPredictType = '/finalmodel_path/model.h5'
    ```
 
 The prediction results will be displayed automatically. If you need to save the results, please specify the path yourself. 
 
 ## **Website of HCRNet**
 
-We also provide a website http://39.104.118.143:5001/. to identify the binding events of both circRNA-RBP and linearRNA-RBP. It works fine for windows and for MacOS, the Google Chrome can open and run the service. Users can click the 'DOWNLOAD EXAMPLE' button to view the data input format.
+We also provide a website http://39.104.118.143:5001/. HCRNet provides identification of the specific binding events for circRNA and linearRNA segments or full-length circRNA sequences. Meanwhile, HCRNet also allows users to facilitate the identification of potential circRNA-RBP binding targets with a generic strategy model.
 
 ## Contact
 Thank you and enjoy the tool! If you have any suggestions or questions, please email me at [*yangyn533@nenu.edu.cn*](mailto:yangyn533@nenu.edu.cn)*.*
