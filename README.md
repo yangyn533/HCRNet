@@ -20,7 +20,9 @@ https://github.com/yangyn533/HCRNet.git
 cd HCRNet
 ```
 ## **Data Availability**
+```
 The pre-trained models (including circRNA2Vec_model, linRNA2Vec_model and bert_model), the 37 circRNA fragment datasets, 31 linear RNA datasets, a full-length circRNA dataset containing 740 sequences and the eCLIP data with binding sites of 150 novel RBPs can be downloaded in this Repositories. Meanwhile, all supporting datasets and source codes for our analyses are also freely available at (https://docs.anaconda.com/anaconda/install/linux/). 
+```
 
 ## **Usage**
 ```
@@ -29,3 +31,39 @@ python HCRNet-Train.py [--RBP_ID <circRNA or linearRNA or eCLIP data>]
                        [--modelType <default='~./Pre-trained models/circRNA2Vec_model'>] 
                        [--storage <default='~./resultpath/result/'>]
 ```
+### **How to train the HCRNet model**
+
+You can train the model of 5-fold cross-validation with a very simple way by the command blow: *Python HCRNet-Train.py.*
+
+ The script of if **name** == "**main** calls training process which trains several models of each model type for an RNA and finds the best set of hyperparameters. The main function then trains the models several times (num_final_runs) and saves the best model.
+
+### **How to predict the probability of unknown circRNA**
+
+The *HCRNet-Predict.py* is proposed to calculate the probability for the circRNAs of unknown types. Please also change following paths to suit your system:
+
+1. set the sequence location. e.g.,
+
+   ```python
+   seqPath = '/home/Sequence/'
+   ```
+
+2. set the type of the RNA Embeddings. e.g., 
+
+   ```python
+   modelType = '/modelpath/circRNA2Vec_model'
+   ```
+
+3. set the type of circRNA model. e.g., 
+
+   ```python
+   modelPredictType = '/finalmodel_path /model.h5'
+   ```
+
+The prediction results will be displayed automatically. If you need to save the results, please specify the path yourself. 
+
+## **Website of HCRNet**
+
+We also provide a website http://39.104.118.143:5001/. to identify the binding events of both circRNA-RBP and linearRNA-RBP. It works fine for windows and for MacOS, the Google Chrome can open and run the service. Users can click the 'DOWNLOAD EXAMPLE' button to view the data input format.
+
+## Contact
+Thank you and enjoy the tool! If you have any suggestions or questions, please email me at [*yangyn533@nenu.edu.cn*](mailto:yangyn533@nenu.edu.cn)*.*
